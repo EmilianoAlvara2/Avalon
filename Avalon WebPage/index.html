@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-49JTBCX3PL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-49JTBCX3PL');
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVALON | Arte & Tecnología</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo"><strong>AVALON |</strong> AVLN</div>
+        <nav>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#proceso">Proceso</a>
+            <a href="#promos">Promos</a>
+            <a href="#comentarios">Opiniones</a>
+        </nav>
+    </header>
+
+    <section id="nosotros" class="section-padding">
+        <div class="container">
+            <h2>Quiénes Somos</h2>
+            <p>Somos un estudio que transforma espacios
+y plataformas digitales mediante "Alquimia
+Visual", integrando arte tradicional y tecnologia 
+tradicional interactiva para conectar con 
+la audiencia</p>
+        </div>
+    </section>
+
+    <section id="proceso" class="section-padding bg-alt">
+        <div class="container">
+            <h2>Nuestro Proceso</h2>
+            <div class="process-grid">
+                <div class="step"><span>1</span><p>Análisis</p></div>
+                <div class="step"><span>2</span><p>Concepto</p></div>
+                <div class="step"><span>3</span><p>Diseño</p></div>
+                <div class="step"><span>4</span><p>Ejecución</p></div>
+                <div class="step"><span>5</span><p>Entrega</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="promos" class="section-padding">
+        <div class="container">
+            <h2>Promociones</h2>
+            <div class="carousel-container">
+                <button class="btn-nav prev" onclick="moveCarousel('promo-c', -1)">&#10094;</button>
+                <div class="carousel" id="promo-c">
+                    <div class="card promo-card">Web Launch -20%</div>
+                    <div class="card promo-card">Branding Especial</div>
+                    <div class="card promo-card">Social Ads Pack</div>
+                    <div class="card promo-card">Diseño de Logo</div>
+                </div>
+                <button class="btn-nav next" onclick="moveCarousel('promo-c', 1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="trabajos" class="section-padding bg-alt">
+        <div class="container">
+            <h2>Trabajos Populares</h2>
+            <div class="carousel-container">
+                <button class="btn-nav prev" onclick="moveCarousel('work-c', -1)">&#10094;</button>
+                <div class="carousel" id="work-c">
+                    <div class="card work-card">Proyecto UI/UX</div>
+                    <div class="card work-card">Arte Generativo</div>
+                    <div class="card work-card">App Móvil</div>
+                    <div class="card work-card">Identidad Visual</div>
+                </div>
+                <button class="btn-nav next" onclick="moveCarousel('work-c', 1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="comentarios" class="section-padding">
+        <div class="container">
+            <h2>Lo que dicen</h2>
+            <div class="comment-list">
+                <div class="comment-item">"Excelente atención y resultados visuales increíbles."</div>
+                <div class="comment-item">"El proceso de trabajo es muy ordenado."</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="opinar" class="section-padding bg-alt">
+        <div class="container">
+            <h2>Danos tu Opinión</h2>
+            <form id="contactForm" class="opinion-form">
+                <input type="text" placeholder="Tu nombre" required>
+                <textarea placeholder="Tu mensaje..." rows="4" required></textarea>
+                <button type="submit" class="btn-submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="social-links">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+        <p>&copy; 2026 Máxima Visual</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
